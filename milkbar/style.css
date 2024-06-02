@@ -48,3 +48,24 @@ header a {
     text-transform: uppercase;
     font-weight: 700;
 }
+
+#myCarousel .item {
+    background: black;
+    background-color: black; 
+    padding: 2rem;
+}
+
+#myCarousel p {
+    color: white; 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    text-align: center; 
+    text-transform: uppercase;
+    margin: 0.4rem; 
+}
+
+#myCarousel svg {
+    margin-top: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
