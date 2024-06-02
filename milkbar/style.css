@@ -1,3 +1,11 @@
+:root {
+    --dark-mode-text-primary: #e4e4e7;
+    --dark-mode-text-secondary: #71717a;
+    --dark-mode-bg-primary: #27272a;
+    --dark-mode-bg-primary-2: #3f3f46;
+    --dark-mode-bg-secondary: #52525b;
+}
+
 html {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -36,36 +44,22 @@ header a {
     align-items: center; 
 }
 
-.top {
-    background-color: black;
-    color: white; 
-    padding: .5rem; 
-    margin: 0; 
-    text-align: center;
-}
-
-.top p {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
 #myCarousel .item {
-    background: black;
-    background-color: black; 
-    padding: 2rem;
+    background-color: var(--dark-mode-bg-primary); 
+    padding: 1rem;
 }
 
 #myCarousel p {
     color: white; 
     font-size: 1.5rem; 
-    font-weight: 700; 
+    font-weight: 500; 
     text-align: center; 
     text-transform: uppercase;
     margin: 0.4rem; 
 }
 
 #myCarousel svg {
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
