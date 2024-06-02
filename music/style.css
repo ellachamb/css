@@ -149,7 +149,7 @@ html, body {
    border-radius: 8px;  
 }
 
-.container main header .serach input {
+.container main header .search input {
     width: 100%; 
     background-color: transparent; 
     border: none; 
