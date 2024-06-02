@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --dark-mode-text-primary: #e4e4e7;
     --dark-mode-text-secondary: #71717a;
@@ -7,15 +9,13 @@
 }
 
 html {
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Poppins', sans-serif; 
   }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box; 
 }
 
 body {
@@ -23,22 +23,22 @@ body {
     padding: 0; 
 }
 
-header {
+.header-top {
     display: flex; 
     width: 100%; 
     align-items: center;
     justify-content: space-between;
     padding: 0.4rem; 
-    border-bottom: 1px solid rgb(98, 98, 98);
+    border-bottom: 1px solid rgb(201, 201, 201);
 }
 
-header a {
+.header-top a {
     margin: .4rem; 
     text-decoration: none;
 }
 
 .logo {
-    width: 150px; 
+    width: 120px; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -52,7 +52,7 @@ header a {
 #myCarousel p {
     color: white; 
     font-size: 1.5rem; 
-    font-weight: 500; 
+    font-weight: 400; 
     text-align: center; 
     text-transform: uppercase;
     margin: 0.4rem; 
@@ -63,3 +63,50 @@ header a {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    grid-gap: 1rem;
+    color: #2b2b2b;
+    margin: 2rem 0; 
+}
+
+.hero-img {
+    width: 40%; 
+    border-radius: 10px;
+    flex: 1;
+}
+
+.hero-img img {
+    width: 100%; 
+    border-radius: 10px;
+    object-fit: fill;
+
+}
+
+.hero-text {
+    text-align: center;
+    column-span: all;
+}
+
+.hero h2 .hero p {
+    font-size: 15px; 
+}
+
+
+.hero strong {
+    font-size: 22.5px; 
+}
+
+.hero button {
+    padding: 1rem 1.5rem; 
+    border: none; 
+    background-color: #e94c8c; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 15px; 
+}
