@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:hover {
+  color: #00ddff;
+}
+a:active {
+  color: #DEB887;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #333;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+  border-bottom: 1px solid #d0d0d0;
+  border-top: 1px solid #d0d0d0;
+  text-transform: uppercase;
+}
+
+li {
+  margin: 1rem;
+}
+
+.post-date {
+  text-transform: uppercase;
+  font-family: "Lora", sans-serif;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  text-align: right;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+header, h2 {
+  font-family: "Lora", sans-serif;
+}
+
+figure {
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: right;
+  }
+  article {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .post-date {
+    border-bottom: none;
+    border-right: 1px solid #d0d0d0;
+    min-width: 12rem;
+  }
+  .post-content {
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
