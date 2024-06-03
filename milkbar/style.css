@@ -216,6 +216,7 @@ marquee {
     overflow-x: auto; 
     white-space: nowrap;
     scrollbar-color: #e94c8c #ffffff;
+    display: inline-block; 
 }
 
 .birthday {
@@ -223,7 +224,7 @@ marquee {
     margin: 10px; 
     border-radius: 10px; 
     background-color: #faf9f6; 
-    min-width: 300px; 
+    min-width: 400px; 
 }
 
 .birthday img {
