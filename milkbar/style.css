@@ -192,3 +192,47 @@ marquee {
     font-size: 14px; 
     margin: 1rem 1.5rem; 
 }
+
+.gifts {
+    text-align: center; 
+    background-color: #faf9f6
+}
+
+.gifts-text h2 {
+    font-size: 25px; 
+    font-weight: 800; 
+}
+
+.gifts-text p {
+    font-size: 14px; 
+    font-weight: 400; 
+}
+
+.gift-scroll {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap;
+    scrollbar-color: #e94c8c #ffffff;
+}
+
+.birthday {
+    display: inline-block; 
+    margin: 10px; 
+    border-radius: 10px; 
+    background-color: #faf9f6; 
+    min-width: 300px; 
+}
+
+.birthday img {
+    width: 100%; 
+    border-radius: 10px; 
+    object-fit: fill; 
+}
+
+.gifts-text {
+    text-align: center; 
+    padding: 2rem 5rem; 
+}
