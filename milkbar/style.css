@@ -127,10 +127,62 @@ body {
 }
 
 marquee {
-    background-color: black; 
+    background-color: #2b2b2b;  
     color: white; 
     padding: 1rem; 
     font-family: "Cutive Mono", monospace;
     animation: marquee 10s linear infinite;
     width: 100%;
+}
+
+.bakery-text {
+    text-align: center;
+    padding: 2rem; 
+}
+.bakery-text h2{
+    font-size: 25px; 
+}
+
+.bakery-text p {
+    font-size: 14px; 
+}
+
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-color: #e94c8c #ffffff;
+}
+
+.scroll-content {
+    display: inline-block;
+}
+
+.itemitem {
+    display: inline-block;
+    width: 300px;
+    height: 400px; 
+    margin-right: 10px;  
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240); 
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.itemitem img {
+    width: 100%;
+    border-radius: 10px; 
+    object-fit: fill; 
+}
+
+.scroll-text a {
+    text-decoration: none;
+    color: #2b2b2b; 
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.scroll-text {
+    text-wrap: wrap;
+    padding: 1rem;
+    text-align: center; 
 }
