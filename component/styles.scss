@@ -1,0 +1,86 @@
+
+//colors
+$component-background-color: rgb(250, 250, 250);
+$border-color: rgb(227, 227, 227);
+$main-color: gray;
+$secondary-color: white; 
+$promo-color: green;
+
+.cart {
+    width: 325px; 
+    font-family: "Helvetica", arial, sans-serif;
+    margin: auto;
+    background-color: $component-background-color;
+    padding: 1rem; 
+    &__top {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    }
+    
+    &__title {
+        margin: 0; 
+        color: $main-color; 
+    }
+    
+    &__number {
+        color:$secondary-color;
+        background-color: $main-color;
+        padding: .3rem 1rem;
+        border-radius: 20px;
+    }
+    
+    &__body {
+        background-color: $secondary-color;
+        margin: .5rem; 
+        padding: 0; 
+        border: 1px solid $border-color; 
+        border-radius: 5px;
+    }
+    
+    &__item, &__promo {
+        display: flex; 
+        justify-content: space-between; 
+        border-bottom: 1px solid $border-color;
+        padding: 0 1rem; 
+    }
+    
+    &__price, &__description, &__code {
+        color: $main-color; 
+    }
+    
+    &__promo {
+        color: $promo-color; 
+        background-color: $component-background-color;
+    }
+    
+    &__bottom {
+        margin: 1rem .5rem; 
+        padding: .5rem; 
+        background-color: $secondary-color;
+        border: 1px solid $border-color;
+        border-radius: 5px; 
+    }
+    
+    &__input {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        border: 1px solid $border-color;
+        border-radius: 5px;
+    }
+    
+    &__code {
+        margin: 0; 
+        padding: 0 1rem; 
+    }
+    
+    &__button {
+        background-color: $main-color; 
+        color: $secondary-color; 
+        padding: .5rem 1rem; 
+        border-radius: 5px; 
+        margin: 0; 
+    }
+}
+

@@ -1,0 +1,45 @@
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-color: #e94c8c #ffffff;
+}
+
+.scroll-content {
+    display: inline-block;
+}
+
+.itemitem {
+    display: inline-block;
+    width: 300px;
+    height: 400px; 
+    margin: 10px;  
+    border-radius: 10px;
+    background-color: #fff; 
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
+    justify-items: top;
+}
+
+.itemitem img {
+    width: 100%;
+    border-radius: 10px; 
+    object-fit: fill; 
+}
+
+.scroll-text a {
+    text-decoration: none;
+    color: #2b2b2b; 
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.scroll-text {
+    text-wrap: wrap;
+    padding: 1rem;
+    text-align: center; 
+}
+
+.scroll-text p {
+    font-size: 14px; 
+    margin: 1rem 1.5rem; 
+}
