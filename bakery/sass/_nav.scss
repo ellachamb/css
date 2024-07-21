@@ -1,6 +1,7 @@
 nav { 
-    padding: 2rem;
-    background-color: $tertiary-color;
+    padding: 1rem;
+    background-color: $background-color;
+    border-bottom: $border; 
     ul {
         display: flex; 
         justify-content: space-around;
@@ -10,12 +11,14 @@ nav {
     a {
         text-decoration: none;
         color: $primary-color;
+        font-size: 1.2rem; 
+        font-family: "Fraunces", serif; 
         &:hover {
-            color: $secondary-color;
-            transition: ease 0.2s;
+            color: $tertiary-color;
+            transition: $transition;
         }
     }
     img {
-        width: 300px;
+        width: 270px;
     }
 }
