@@ -9,8 +9,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", serif;
+  background-color: #f2f0ed;
 }
 
 h1 {
@@ -22,7 +28,6 @@ h1 {
 
 h2, h3 {
   font-family: "Montserrat", sans-serif;
-  color: #42332C;
   font-weight: 400;
 }
 
@@ -42,14 +47,15 @@ nav ul {
   align-items: center;
 }
 nav a {
-  text-decoration: none;
   color: #42332C;
   font-size: 1.2rem;
   font-family: "Fraunces", serif;
+  text-decoration: none;
 }
 nav a:hover {
   color: #D5807F;
   transition: ease 0.4s;
+  text-decoration: none;
 }
 nav img {
   width: 270px;
@@ -74,11 +80,8 @@ nav img {
 .hero .arrow1 {
   width: 25%;
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 0px;
-}
-.hero .arrow img {
-  z-index: -1;
 }
 .hero .hero-div {
   text-align: left;
@@ -92,14 +95,16 @@ nav img {
   bottom: 0px;
   right: 0px;
 }
+.hero .hero-div h3 {
+  color: #42332C;
+}
 .hero .hero-div p {
   font-size: 1.5rem;
   margin: 2rem 0;
 }
 .hero .hero-div a {
   color: #42332C;
-  font-weight: 600;
-  font-family: "Fraunces", serif;
+  font-weight: 500;
   background-color: #B4C5E4;
   text-decoration: none;
   padding: 1rem;
@@ -204,7 +209,6 @@ footer .contact-icons {
 }
 footer #subscribe form {
   display: block;
-  text-align: center;
 }
 footer #subscribe form input {
   padding: 0.5rem;
@@ -224,4 +228,219 @@ footer #subscribe form .button:hover {
   background-color: #D5807F;
   transition: ease 0.4s;
   cursor: pointer;
+}
+
+#bestsellers {
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  background-color: #B4C5E4;
+  padding: 2rem;
+  border: 3px solid #42332C;
+  position: relative;
+}
+#bestsellers .design4 {
+  width: 30%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#bestsellers .design5 {
+  width: 30%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#bestsellers .bestseller-text {
+  color: #42332C;
+  text-align: right;
+  margin-right: 2rem;
+}
+#bestsellers ul {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.carousel-inner img {
+  height: 550px;
+  object-fit: cover;
+}
+
+#carouselExampleIndicators {
+  width: 60%;
+  max-width: 600px;
+  margin: auto;
+  background-color: #42332C;
+  border: 3px solid #42332C;
+  box-shadow: 3px 3px 1px #42332C;
+}
+#carouselExampleIndicators li {
+  background-color: #D5807F;
+}
+#carouselExampleIndicators h5 {
+  color: #f2f0ed;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #42332C;
+  padding: 1rem;
+  box-shadow: -3px -3px 1px #f2f0ed;
+}
+#carouselExampleIndicators .carousel-control-prev-icon, #carouselExampleIndicators .carousel-control-next-icon {
+  background-color: #42332C;
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+#about {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+#about img {
+  width: 100%;
+  max-width: 400px;
+  border: 3px solid #42332C;
+  border-radius: 30px;
+}
+#about span {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+#about span p {
+  margin: 0 1rem;
+  font-weight: 500;
+}
+#about .about-text {
+  margin-right: 1rem;
+  max-width: 35%;
+  text-align: right;
+}
+#about .about-text h2 {
+  font-family: "Fraunces", serif;
+}
+#about p {
+  margin-top: 2rem;
+}
+#about .button {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 3px solid #42332C;
+  box-shadow: 3px 3px 1px #42332C;
+  background-color: #B4C5E4;
+  color: #42332C;
+  font-weight: 500;
+}
+#about .button:hover {
+  color: #EADED7;
+  background-color: #42332C;
+  transition: ease 0.4s;
+  text-decoration: none;
+}
+
+#subscribe-here {
+  text-align: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+#subscribe-here img {
+  width: 100%;
+  margin: auto;
+  max-width: 300px;
+}
+#subscribe-here .subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#subscribe-here form {
+  display: block;
+  margin: 2rem;
+}
+#subscribe-here form input {
+  padding: 0.5rem;
+  width: 400px;
+  background-color: #B4C5E4;
+  color: #42332C;
+  border: none;
+  border-radius: 10px;
+}
+#subscribe-here form .button {
+  padding: 0.5rem;
+  border-radius: 40px;
+  background-color: #42332C;
+  color: #f2f0ed;
+  width: 200px;
+  font-weight: 900px;
+  border: 3px solid #42332C;
+}
+#subscribe-here form .button:hover {
+  background-color: #D5807F;
+  transition: ease 0.4s;
+  cursor: pointer;
+}
+
+#locations {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0.5rem;
+  color: #42332C;
+}
+#locations svg {
+  fill: #42332C;
+}
+#locations .location-div {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  width: 100%;
+  margin: 0.5rem;
+}
+#locations svg {
+  margin: 0.4rem 0;
+}
+#locations .main-contact {
+  display: flex;
+  justify-content: space-around;
+}
+#locations .main-contact .contact-div {
+  margin: 1rem;
+}
+
+#catering {
+  align-self: center;
+  margin: 3rem 3rem;
+  position: relative;
+}
+#catering .catering-img {
+  width: 50%;
+  border: 3px solid #42332C;
+  border-radius: 30px;
+  box-shadow: 10px 10px 1px #42332C;
+}
+#catering .catering-text {
+  position: absolute;
+  width: 50%;
+  background-color: #4368A3;
+  color: #f2f0ed;
+  box-shadow: 10px 10px 1px #42332C;
+  padding: 1rem 1.5rem;
+  right: 0px;
+  top: 60px;
+}
+#catering h1 {
+  color: #f2f0ed;
+}
+#catering p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+#catering .arrow3 {
+  width: 30%;
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
 }

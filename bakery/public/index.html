@@ -3,19 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
     <title>Mrs. Chip Cookies</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav-icon.png">
 </head>
 <body>
+    <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+        <div class="carousel-inner">
+          <div class="item active">
+            <p>Try the new limited-edition s'mores cake truffles!</p>
+          </div>
+      
+          <div class="item">
+            <p>Nationwide Shipping!</p>
+          </div>
+      
+          <div class="item">
+            <p>Get $25 Off Orders $125+ for a limited Time!</p>
+          </div>
+        </div>
+      
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+              </svg>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+        </a>
+      </div> -->
     <header>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="#bestsellers">Menu</a></li>
                 <li><img src="images/mrschiplogo.png" alt="Mrs. Chip Logo" /></li>
-                <li><a href="#Catering">Catering</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#catering">Catering</a></li>
+                <li><a href="#locations">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,59 +53,190 @@
             <img class="arrow" src="images/design.png" alt="Design"/>
             <img class="arrow1" src="images/arrow1.png" alt="Arrow"/>
             <div class="hero-div"> 
-                <h1>Fresh Out The Oven!</h1>
-                <h2>Mrs. Chip offers quality baked goods that are guarenteed to satisfy your sweet tooth.</h2>
-                <p><a href="#menu" class="button">Check out our offerings</a></p>
+                <h1>The Ultimate<i> Sweet Treat</i></h1>
+                <h3>Mrs. Chip's cookies are guarenteed to satisfy your sweet tooth.</h3>
+                <p><a href="#menu" class="button">Check out our bestsellers</a></p>
                 <img class="favicon" src="images/arrow2.png" alt="Arrow"/>
             </div>
         </div>
         <section id="about">
-            <h2>About Us</h2>
-            <p>Chip City is a cookie shop that offers a variety of cookies that are made fresh daily. Our cookies are made with the finest ingredients and are baked to perfection. We offer a variety of flavors that are sure to satisfy your sweet tooth. Our cookies are perfect for any occasion and make great gifts for friends and family. We also offer catering services for events and parties. Come visit us today and try one of our delicious cookies!</p>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Mrs. Chip is a cookie shop that offers a variety of cookies that are made fresh daily. Our cookies are made with the finest ingredients and are baked to perfection. We offer a variety of flavors that are sure to satisfy your sweet tooth. Our cookies are perfect for any occasion and make great gifts for friends and family. We also offer catering services for events and parties. Come visit us today and try one of our cookies!</p>
+                <p><a href="#locations" class="button">See our locations</a></p>
+            </div>
+            <div class="about-image">
+                <img src="images/trays.jpg" alt="Cookie Poster" />
+            </div>
+            <div class="about-icons">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-calendar-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1m7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg>
+                    
+                      <p>Made fresh daily</p>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cookie" viewBox="0 0 16 16">
+                        <path d="M6 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m4.5.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.5 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                        <path d="M8 0a7.96 7.96 0 0 0-4.075 1.114q-.245.102-.437.28A8 8 0 1 0 8 0m3.25 14.201a1.5 1.5 0 0 0-2.13.71A7 7 0 0 1 8 15a6.97 6.97 0 0 1-3.845-1.15 1.5 1.5 0 1 0-2.005-2.005A6.97 6.97 0 0 1 1 8c0-1.953.8-3.719 2.09-4.989a1.5 1.5 0 1 0 2.469-1.574A7 7 0 0 1 8 1c1.42 0 2.742.423 3.845 1.15a1.5 1.5 0 1 0 2.005 2.005A6.97 6.97 0 0 1 15 8c0 .596-.074 1.174-.214 1.727a1.5 1.5 0 1 0-1.025 2.25 7 7 0 0 1-2.51 2.224Z"/>
+                      </svg>
+                      <p>Quality ingredients</p>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                    <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
+                  </svg>
+                  <p>Perfect for gift giving</p>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                      </svg>
+                    <p>Available for catering</p>
+                </span>
+            </div>
         </section>
-        <section id="menu">
-            <h2>Menu</h2>
-            <div class="menu-item">
-                <img src="images/chocolatechip.jpg" alt="Chocolate Chip Cookie" />
-                <h3>Chocolate Chip</h3>
-                <p>Our classic chocolate chip cookie is made with semi-sweet chocolate chips and is baked to perfection. This cookie is perfect for any occasion and is sure to satisfy your sweet tooth.</p>
+        <section id="bestsellers">
+            <img class="design4" src="images/design4.png" alt="Design"/>
+            <img class="design5" src="images/design5.png" alt="Design"/>
+            <div class="bestseller-text">
+                <h1>Featured Cookies</h1>
+                <h3>Check out our mouth-watering bestselling cookies!</h3>
+                <ul>
+                    <li>Chocolate Chip Walnut</li>
+                    <li>Double Chocolate</li>
+                    <li>Rocky Road</li>
+                    <li>Funfetti</li>
+                    <li>Chocolate Filled Macademia Nut</li>
+                </ul>
             </div>
-            <div class="menu-item">
-                <img src="images/sugarcookie.jpg" alt="Sugar Cookie" />
-                <h3>Sugar Cookie</h3>
-                <p>Our sugar cookie is made with the finest ingredients and is baked to perfection. This cookie is perfect for any occasion and is sure to satisfy your sweet tooth.</p>
-            </div>
-            <div class="menu-item">
-                <img src="images/peanutbutter.jpg" alt="Peanut Butter Cookie" />
-                <h3>Peanut Butter</h3>
-                <p>Our peanut butter cookie is made with the finest ingredients and is baked to perfection. This cookie is perfect for any occasion and is sure to satisfy your sweet tooth.</p>
-            </div>
-            <div class="menu-item">
-                <img src="images/oatmealraisin.jpg" alt="Oatmeal Raisin Cookie" />
-                <h3>Oatmeal Raisin</h3>
-                <p>Our oatmeal raisin cookie is made with the finest ingredients and is baked to perfection. This cookie is perfect for any occasion and is sure to satisfy your sweet tooth.</p>
-            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/cookiestack9.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Chocolate Chip Walnut</h5>
+                    </div>
+                </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/cookiestack4.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Double Chocolate</h5>
+                    </div>
+                </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/cookiestack5.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Rocky Road</h5>
+                    </div>
+                </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/cookiestack3.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Funfetti</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/cookiestack6.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Chocolate Filled Macademia Nut</h5>
+                    </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </section>
         <section id="locations">
-            <h2>Locations</h2>
+            <h1>Locations</h1>
+            <div class="location-div">
             <div class="location">
-                <h3>Chip City - Downtown</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg>
+                <h3>Downtown</h3>
                 <p>123 Main Street</p>
                 <p>Downtown, CA 12345</p>
                 <p>Phone: 123-456-7890</p>
             </div>
             <div class="location">
-                <h3>Chip City - Uptown</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg>
+                <h3>Uptown</h3>
                 <p>456 Elm Street</p>
                 <p>Uptown, CA 67890</p>
                 <p>Phone: 098-765-4321</p>
             </div>
             <div class="location">
-                <h3>Chip City - Midtown</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg>
+                <h3>Midtown</h3>
                 <p>789 Oak Street</p>
                 <p>Midtown, CA 54321</p>
                 <p>Phone: 456-789-0123</p>
             </div>
+        </div>
+        <h1>Contact Us</h1>
+        <div class="main-contact">
+            <div class="contact-div">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                <h3>123-456-7890</h3>
+            </div>
+            <div class="contact-div">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+                <h3>mrschip@chip.com</h3>
+            </div>
+        </div> 
+        </section>
+        <section id="catering">
+            <div class="catering-text">
+                <h1>Let us cater your next event!</h1>
+                <div class="p">
+                    <p>Cookies are great for any occasion. Email mrschip@chip.com with information about your catering needs!</p>
+                    <div class="p-img">
+                        <img class="arrow3" src="images/arrow3.png" alt="Arrow"/>
+                    </div>
+                </div>
+            </div>
+            <img class="catering-img" src="images/cookiebox2.jpg" alt="Cookie Box"/>
+        </section>
+        <section id="subscribe-here">
+            <h1>Become apart of the Chip Club!</h1>
+            <p>You'll get exclusive promotional deals and be the first one to know about new products!</p>
+            <div class="subscribe-form">
+            <form>
+                <p><input type="text" name="name" placeholder="Name" required/></p>
+                <p><input type="text" name="birthday" placeholder="Birthday" required/></p> 
+                <p><input type="email" name="email" placeholder="Email" required/></p>
+                <p><input type="tel" name="phone" placeholder="Phone" required/></p>
+                <p><input class="button" type="submit" value="Subscribe" required/></p>
+            </form>
+            <img class="character" src="images/favicon.png" alt="Cookie Character"/>
+        </div>
         </section>
         <footer>
             <div id="footer-img"><img src="images/mrschiplogo.png" alt="Mrs. Chip Logo"/></div>
@@ -138,5 +297,13 @@
             <p id="copy">&copy; 2021 Chip City. All rights reserved.</p>
         </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#carouselExampleIndicators').carousel();
+  });
+</script>
 </body>
 </html>
