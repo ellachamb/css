@@ -1,0 +1,44 @@
+#locations {
+    align-items: center;
+    text-align: center; 
+    width: 100%; 
+    margin: .5rem; 
+    color: $primary-color;
+    svg {
+        fill: $primary-color;
+    }
+    .location-div {
+        align-items: center; 
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: .5rem;  
+        width: 100%; 
+        margin: .5rem;
+    }
+    svg {
+        margin: .4rem 0; 
+    }
+    .main-contact {
+        display: flex; 
+        justify-content: space-around;
+        .contact-div {
+            margin: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #locations {
+        .location-div {
+            display: block; 
+            text-align: center; 
+        }
+        .main-contact {
+            display: block; 
+            .contact-div {
+                margin: 1rem; 
+            }
+        }
+    }
+}
+

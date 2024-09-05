@@ -1,0 +1,63 @@
+#about {
+    margin: 1rem; 
+    padding: 1rem; 
+    display: flex; 
+    align-items: center; 
+    img {
+        width: 100%; 
+        max-width: 400px; 
+        border: $border; 
+        border-radius: 30px;
+    }
+    span {
+        display: flex; 
+        padding: 1rem; 
+        align-items: center; 
+        p {
+            margin: 0 1rem; 
+            font-weight: 500; 
+        }
+    }
+    .about-text {
+        margin-right: 1rem; 
+        max-width: 35%; 
+        text-align: right; 
+        h2 {
+            font-family: "Fraunces", serif; 
+        }
+    }
+    p {
+        margin-top: 2rem; 
+    }
+    .button {
+        padding: 1rem; 
+        border-radius: 10px; 
+        border: $border; 
+        box-shadow: 3px 3px 1px $primary-color;
+        background-color: $secondary-color; 
+        color: $primary-color;
+        font-weight: 500;
+        &:hover {
+            color: $background-color;
+            background-color: $primary-color;
+            transition: $transition; 
+            text-decoration: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #about {
+        display: block; 
+        .about-text {
+            text-align: center; 
+            max-width: 100%; 
+            margin: 1rem;
+        }
+        img {
+            margin: 1rem 0; 
+            max-width: 100%;
+        }
+    }
+}
