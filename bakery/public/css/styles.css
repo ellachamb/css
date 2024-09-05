@@ -38,7 +38,6 @@ p {
 nav {
   padding: 1rem;
   background-color: #EADED7;
-  border-bottom: 3px solid #42332C;
 }
 nav ul {
   display: flex;
@@ -61,11 +60,19 @@ nav img {
   width: 270px;
 }
 
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+  nav img {
+    width: 200px;
+  }
+}
 .hero {
   background: #F2E4EE;
   display: flex;
   align-items: center;
-  border-bottom: 3px solid #42332C;
   position: relative;
 }
 .hero .hero-image {
@@ -82,18 +89,21 @@ nav img {
   position: absolute;
   top: 0px;
   right: 0px;
+  z-index: 0;
 }
 .hero .hero-div {
   text-align: left;
   padding: 1rem;
   margin: 1rem;
   line-height: 1.5;
+  z-index: 100;
 }
 .hero .hero-div .favicon {
   width: 30%;
   position: absolute;
   bottom: 0px;
   right: 0px;
+  z-index: -1;
 }
 .hero .hero-div h3 {
   color: #42332C;
@@ -111,6 +121,7 @@ nav img {
   border-radius: 10px;
   border: 3px solid #42332C;
   box-shadow: 3px 3px 1px #42332C;
+  z-index: 101;
 }
 .hero .hero-div a:hover {
   color: #EADED7;
@@ -118,6 +129,17 @@ nav img {
   transition: ease 0.4s;
 }
 
+@media screen and (max-width: 800px) {
+  .hero .hero-div h3 {
+    font-size: 2rem;
+  }
+  .hero .hero-div p {
+    font-size: 1rem;
+  }
+  .hero .hero-div a {
+    font-size: 1rem;
+  }
+}
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -157,7 +179,6 @@ footer {
   padding: 20px;
   font-size: 14px;
   margin-top: 20px;
-  border-top: 3px solid #42332C;
 }
 footer #footer-img {
   width: 100%;
@@ -230,33 +251,52 @@ footer #subscribe form .button:hover {
   cursor: pointer;
 }
 
-#bestsellers {
+@media screen and (max-width: 800px) {
+  footer {
+    text-align: center;
+  }
+  footer .contact-icons {
+    display: block;
+  }
+  footer .contact-icons svg {
+    display: none;
+  }
+  footer #footer-grid {
+    display: block;
+  }
+  footer #subscribe form input {
+    width: 100%;
+  }
+  footer #subscribe form .button {
+    width: 100%;
+  }
+}
+#menu {
   display: flex;
   margin: 2rem;
   align-items: center;
   background-color: #B4C5E4;
   padding: 2rem;
-  border: 3px solid #42332C;
   position: relative;
 }
-#bestsellers .design4 {
+#menu .design4 {
   width: 30%;
   position: absolute;
   top: 0px;
   left: 0px;
 }
-#bestsellers .design5 {
+#menu .design5 {
   width: 30%;
   position: absolute;
   bottom: 0px;
   left: 0px;
 }
-#bestsellers .bestseller-text {
+#menu .bestseller-text {
   color: #42332C;
   text-align: right;
   margin-right: 2rem;
 }
-#bestsellers ul {
+#menu ul {
   list-style: none;
   font-size: 1.2rem;
   font-weight: 600;
@@ -292,6 +332,21 @@ footer #subscribe form .button:hover {
   padding: 0.8rem;
 }
 
+@media screen and (max-width: 800px) {
+  #menu {
+    display: block;
+  }
+  #menu .carousel-inner img {
+    height: 400px;
+  }
+  #menu .bestseller-text {
+    text-align: center;
+    margin: 1rem;
+  }
+  #menu ul {
+    text-align: center;
+  }
+}
 #about {
   margin: 1rem;
   padding: 1rem;
@@ -340,6 +395,20 @@ footer #subscribe form .button:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 800px) {
+  #about {
+    display: block;
+  }
+  #about .about-text {
+    text-align: center;
+    max-width: 100%;
+    margin: 1rem;
+  }
+  #about img {
+    margin: 1rem 0;
+    max-width: 100%;
+  }
+}
 #subscribe-here {
   text-align: center;
   align-items: center;
@@ -381,6 +450,17 @@ footer #subscribe form .button:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 800px) {
+  #subscribe-here .subscribe-form {
+    display: block;
+  }
+  #subscribe-here .subscribe-form form input {
+    width: 100%;
+  }
+  #subscribe-here .subscribe-form form .button {
+    width: 100%;
+  }
+}
 #locations {
   align-items: center;
   text-align: center;
@@ -410,6 +490,18 @@ footer #subscribe form .button:hover {
   margin: 1rem;
 }
 
+@media screen and (max-width: 800px) {
+  #locations .location-div {
+    display: block;
+    text-align: center;
+  }
+  #locations .main-contact {
+    display: block;
+  }
+  #locations .main-contact .contact-div {
+    margin: 1rem;
+  }
+}
 #catering {
   align-self: center;
   margin: 3rem 3rem;
@@ -429,7 +521,7 @@ footer #subscribe form .button:hover {
   box-shadow: 10px 10px 1px #42332C;
   padding: 1rem 1.5rem;
   right: 0px;
-  top: 60px;
+  top: 10%;
 }
 #catering h1 {
   color: #f2f0ed;
@@ -443,4 +535,85 @@ footer #subscribe form .button:hover {
   position: absolute;
   bottom: -50px;
   right: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  #catering .catering-img {
+    width: 100%;
+  }
+  #catering .catering-text {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  #catering .arrow3 {
+    width: 50%;
+    display: none;
+    bottom: 0;
+    right: 0;
+  }
+}
+#instagram {
+  position: relative;
+  margin: 2rem;
+}
+#instagram .design6 {
+  position: absolute;
+  width: 25%;
+  top: 0;
+  left: 0;
+}
+#instagram .design7 {
+  position: absolute;
+  width: 25%;
+  bottom: 0;
+  left: 0;
+}
+#instagram .instagram-text {
+  position: absolute;
+  margin: 2rem;
+  width: 30%;
+  top: 15%;
+}
+#instagram .instagram-text h3 {
+  color: #42332C;
+}
+#instagram .instagram-text p {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+#instagram .instagram-text a {
+  color: #42332C;
+  font-weight: 500;
+  background-color: #B4C5E4;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 3px solid #42332C;
+  box-shadow: 3px 3px 1px #42332C;
+}
+#instagram .instagram-text a:hover {
+  color: #EADED7;
+  background-color: #42332C;
+  transition: ease 0.4s;
+}
+#instagram .instagram-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #instagram {
+    background-color: #B4C5E4;
+  }
+  #instagram .instagram-text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0.4rem;
+  }
+  #instagram .instagram-img {
+    width: 100%;
+  }
 }

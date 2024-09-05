@@ -4,7 +4,7 @@ footer {
     padding: 20px;
     font-size: 14px;
     margin-top: 20px;
-    border-top: $border; 
+    // border-top: $border; 
     #footer-img {
         width: 100%; 
         text-align: center; 
@@ -73,6 +73,31 @@ footer {
                     background-color: $tertiary-color; 
                     transition: $transition; 
                     cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        text-align: center; 
+        .contact-icons {
+            display: block; 
+            svg {
+                display: none; 
+            }
+        }
+        #footer-grid {
+            display: block; 
+        }
+        #subscribe {
+            form {
+                input {
+                    width: 100%; 
+                }
+                .button {
+                    width: 100%; 
                 }
             }
         }

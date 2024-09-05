@@ -16,8 +16,9 @@
        box-shadow: 10px 10px 1px $primary-color;
         padding: 1rem 1.5rem;
         right: 0px; 
-        top: 60px;
+        top: 10%;
     }
+
     h1 {
         color: $light-color; 
     }
@@ -29,5 +30,25 @@
         width: 30%; 
         position: absolute; 
         bottom: -50px; right: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #catering {
+        .catering-img {
+            width: 100%; 
+        }
+        .catering-text {
+            width: 100%; 
+            position: relative; 
+            top: 0; 
+            right: 0; 
+        }
+        .arrow3 {
+            width: 50%; 
+            display: none; 
+            bottom: 0; 
+            right: 0; 
+        }
     }
 }

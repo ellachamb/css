@@ -39,3 +39,20 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    #subscribe-here {
+        .subscribe-form {
+            display: block; 
+            form {
+                input {
+                    width: 100%; 
+                }
+                .button {
+                    width: 100%; 
+                }
+            }
+        }
+    }
+    
+}

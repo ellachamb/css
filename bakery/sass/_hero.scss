@@ -2,7 +2,7 @@
     background: $alt-background;
     display: flex; 
     align-items: center;
-    border-bottom: $border; 
+    // border-bottom: $border; 
     position: relative; 
     .hero-image {
         width: 35%; 
@@ -17,16 +17,19 @@
         width: 25%; 
         position: absolute; 
         top: 0px; right: 0px; 
+        z-index: 0; 
     }
     .hero-div {
         text-align: left; 
         padding: 1rem; 
         margin: 1rem; 
         line-height: 1.5;
+        z-index: 100; 
         .favicon {
             width: 30%; 
             position: absolute; 
             bottom: 0px; right: 0px;
+            z-index: -1;
         }
         h3 {
             color: $primary-color;
@@ -45,6 +48,7 @@
             border-radius: 10px;
             border: $border; 
             box-shadow: 3px 3px 1px $primary-color;
+            z-index: 101; 
 
             &:hover {
                 color: $background-color;
@@ -53,5 +57,20 @@
             }
         }
     }
+}
 
+@media screen and (max-width: 800px) {
+    .hero {
+        .hero-div {
+            h3 {
+                font-size: 2rem; 
+            }
+            p {
+                font-size: 1rem; 
+            }
+            a {
+                font-size: 1rem; 
+            }
+        }
+    }    
 }

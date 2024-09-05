@@ -27,3 +27,18 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    #locations {
+        .location-div {
+            display: block; 
+            text-align: center; 
+        }
+        .main-contact {
+            display: block; 
+            .contact-div {
+                margin: 1rem; 
+            }
+        }
+    }
+}
+

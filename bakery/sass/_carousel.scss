@@ -15,13 +15,13 @@
 //     background-color: rgba(0, 0, 0, 0.5);
 // }
 
-#bestsellers {
+#menu {
     display: flex; 
     margin: 2rem;
     align-items: center; 
     background-color: $secondary-color;
     padding: 2rem; 
-    border: $border;
+    // border: $border;
     position: relative; 
     .design4 {
         width: 30%; 
@@ -73,5 +73,21 @@
         background-color: $primary-color; 
         border-radius: 50%;
         padding: .8rem; 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        display: block; 
+        .carousel-inner img {
+            height: 400px; 
+        }
+        .bestseller-text {
+            text-align: center; 
+            margin: 1rem; 
+        }
+        ul {
+            text-align: center; 
+        }
     }
 }
