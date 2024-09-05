@@ -1,0 +1,62 @@
+#instagram {
+    position: relative;
+    margin: 2rem; 
+    .design6 {
+        position: absolute; 
+        width: 25%; 
+        top: 0; left: 0; 
+    } 
+    .design7 {
+        position: absolute; 
+        width: 25%; 
+        bottom: 0; left: 0;  
+    }
+    .instagram-text {
+        position: absolute;
+        margin: 2rem;  
+        width: 30%;
+        top: 15%; 
+        h3 {
+            color: $primary-color; 
+        }
+        p {
+            font-size: 1rem; 
+            margin: 2rem 0;
+        }
+        a {
+            color: $primary-color; 
+            font-weight: 500;
+            background-color: $secondary-color; 
+            text-decoration: none; 
+            padding: 1rem; 
+            border-radius: 10px;
+            border: $border; 
+            box-shadow: 3px 3px 1px $primary-color;
+            &:hover {
+                color: $background-color;
+                background-color: $primary-color;
+                transition: $transition; 
+            }
+        }
+    }
+    .instagram-img {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #instagram {
+        background-color: $secondary-color; 
+        .instagram-text {
+            width: 100%; 
+            text-align: center; 
+            position: relative;
+            margin: 0; 
+            padding: 0.4rem;
+        }
+        .instagram-img {
+            width: 100%; 
+        }
+    }
+    
+}

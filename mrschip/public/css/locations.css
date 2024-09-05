@@ -1,0 +1,17 @@
+#locations {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0.5rem;
+}
+#locations .location-div {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  width: 100%;
+  margin: 0.5rem;
+}
+#locations svg {
+  margin: 0.4rem 0;
+}
