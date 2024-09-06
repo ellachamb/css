@@ -130,11 +130,26 @@ nav img {
 }
 
 @media screen and (max-width: 800px) {
+  .hero {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  .hero .arrow {
+    display: none;
+  }
+  .hero .arrow1 {
+    display: none;
+  }
+  .hero .hero-div {
+    text-align: center;
+    margin: 0;
+  }
   .hero .hero-div h3 {
     font-size: 2rem;
   }
   .hero .hero-div p {
-    font-size: 1rem;
+    font-size: 0.4em;
   }
   .hero .hero-div a {
     font-size: 1rem;
@@ -337,7 +352,7 @@ footer #subscribe form .button:hover {
     display: block;
   }
   #menu .carousel-inner img {
-    height: 400px;
+    height: 300px;
   }
   #menu .bestseller-text {
     text-align: center;
@@ -491,7 +506,11 @@ footer #subscribe form .button:hover {
 }
 
 @media screen and (max-width: 800px) {
+  #locations {
+    margin: 0;
+  }
   #locations .location-div {
+    margin: 0;
     display: block;
     text-align: center;
   }
