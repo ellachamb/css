@@ -10,7 +10,7 @@
 }
 
 html {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
   }
 
 *,
@@ -22,6 +22,10 @@ html {
 body {
     margin: 0 auto; 
     padding: 0; 
+}
+
+main {
+    margin-top: 100px; 
 }
 
 header {
@@ -360,5 +364,15 @@ footer h2 {
 
     #text2 {
         order: 3; 
+    }
+
+    .hero {
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem; 
+    }
+
+    .hero-img {
+        width: 100%; 
     }
 }
